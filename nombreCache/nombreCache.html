@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nombre Caché</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/nombreCache.js"></script>
+    <style>
+      .cache {
+        display:none;
+      }
+      body {
+        text-align: center;
+        font-family: Verdana, Geneva, sans-serif;
+      }
+      #message {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-weight: bolder;
+      }
+      .gagne {
+        color: green;
+      }
+      .perdu {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Trouvez le nombre caché entre 0 et 100<br> en 10 essais maximum</p>
+    <label for="prop">votre proposition : </label>
+    <input type="text" id="prop" name="proposition" value="" /><br />
+    <div id="message">   
+    </div>
+    <div id="partieEncours">
+      <button id="jouerBtn">Jouer</button> 
+      <button id="finPartieBtn">Abandonner</button>
+    </div>
+    <div id="partieTerminee" class="cache">
+      <button id="debutPartieBtn">Nouvelle Partie</button>
+    </div>
+  </body>
+</html>
